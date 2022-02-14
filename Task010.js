@@ -1,7 +1,7 @@
 function commonLetters(word1,word2)
 {
     {//Changing all charecters to lowercase
-        let presentCommonLetters =[]
+        var presentCommonLetters =[]
         word1= word1.toLowerCase()
         word2= word2.toLowerCase()
 
@@ -13,8 +13,8 @@ function commonLetters(word1,word2)
                     {presentCommonLetters.push(word1[i])}
                 }; 
             }
-        let nonRepeatingLetters = [...new Set(presentCommonLetters)];//removing reapiting cha from list of present vowels
-        let output = nonRepeatingLetters.join(", ")
+        const nonRepeatingLetters = [...new Set(presentCommonLetters)];//removing reapiting cha from list of present vowels
+        output = nonRepeatingLetters.join(", ")
         return "'Common letters: " +output +"'";
     }
 }
